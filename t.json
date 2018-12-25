@@ -1,0 +1,219 @@
+{
+    "clinical_study": {
+        "@rank": "117329",
+        "required_header": {
+            "download_date": "ClinicalTrials.gov processed this data on April 10, 2017",
+            "link_text": "Link to the current ClinicalTrials.gov record.",
+            "url": "https://clinicaltrials.gov/show/NCT01575613"
+        },
+        "id_info": {
+            "org_study_id": "REDHOT_OPP1024438",
+            "nct_id": "NCT01575613"
+        },
+        "brief_title": "Reducing the Burden of Malaria by Targeting Hotspots of Malaria Transmission",
+        "acronym": "REDHOT",
+        "official_title": "Reducing the Burden of Malaria by Targeting Hotspots of Transmission and Improving Malaria Control Measures in the Highlands of Western Kenya: Simultaneous Rollout of Four Malaria Control Interventions and Evaluation by Cross-sectional Surveys",
+        "sponsors": {
+            "lead_sponsor": {
+                "agency": "Radboud University",
+                "agency_class": "Other"
+            },
+            "collaborator": [
+                {
+                    "agency": "LondonSchool of Hygiene & Tropical Medicine, London, UK",
+                    "agency_class": "Other"
+                },
+                {
+                    "agency": "Kenya Medical Research Institute, Kisumu, Kenya",
+                    "agency_class": "Other"
+                },
+                {
+                    "agency": "Centers for Disease Control and Prevention",
+                    "agency_class": "U.S. Fed"
+                },
+                {
+                    "agency": "InternationalCentre of Insect Physiology and Ecology, Mbita, Kenya",
+                    "agency_class": "Other"
+                },
+                {
+                    "agency": "Division of Malaria Control, Ministry of Health, Nairobi, Kenya",
+                    "agency_class": "Other"
+                }
+            ]
+        },
+        "source": "Radboud University",
+        "oversight_info": {
+            "has_dmc": "No"
+        },
+        "brief_summary": {
+            "textblock": "In this study, the investigators propose to determine the value of rolling out four targeted\n      malaria control efforts in reducing overall malaria transmission. These targeted control\n      efforts include local upscaling of IRS and ITNs in hotspots of malariatransmission. In\n      addition, larviciding will be employed to target malaria vectors, also those that are less\n      susceptible to IRS and ITNs as a consequence of outdoor feeding and resting. Lastly, the\n      human infectious reservoir will be reduced in hotspots of malaria transmission by treating\n      parasite carriers and their household members with the current first-line antimalarial drug.\n      The impact of these targeted interventions on overall transmission intensity will be\n      assessed in the context of currently ongoing malaria control activities in a plausibility\n      study. Hotspots of malaria transmission are defined in an area of 100km2 and randomized to\n      receive hotspot targeted interventions and compared with their baseline and with control\n      clusters where the routine (untargeted) malaria control activities continue. The\n      interventions will be evaluated based on changes in parasite prevalence measured in\n      community surveys inside and outside hotspots of malaria transmission. Parasite prevalence\n      will be compared before and after the intervention in intervention clusters and between\n      intervention and control clusters.\n\n      In addition to malaria surveys in the human population, an entomological evaluation will\n      take place where the densities of mosquito larvae and adult mosquitoes are monitored\n      longitudinally."
+        },
+        "detailed_description": {
+            "textblock": "DEFINITIONS This study uses a plausibility design to determine the plausible impact of\n      hotspot-targeted interventions on overall malaria transmission. Hotspots will be detected in\n      the 100km2 study area. Hotspots are defined as areas with a level of transmission intensity\n      that exceeds that in the surrounding area; indicated by a higher sero-conversion rate and/or\n      age-adjusted density of malaria-specific antibodies.\n\n      Clusters for the interventionare defined as a hotspot and the area surrounding this hotspot\n      in each direction up to 500 meters.\n\n      INTERVENTION Half of the clusters will be randomized to hotspot-targeted interventions,\n      while the other half will serve as control. The plausible impact ofhotspot targeted\n      interventions will be evaluated by comparing malaria indices in intervention clusters with\n      their baseline and with control clusters.\n\n      In each phase four hotspot-targeted interventions will be superimposed on ongoing control\n      measures: hotspots will be targeted with a combination IRS, long-lasting insecticide treated\n      nets (LLINs), larviciding and a focal screening and treatment (FSAT).\n\n      EVALUATION The primary outcome will be parasite prevalence in evaluation zones (i.e. the\n      area surrounding malaria hotspots) of targeted and untargeted clusters. In addition,\n      parasite prevalence will be determined inside hotspots of malaria transmission and in\n      evaluation zones in relation to distance to the hotspot boundary. For this, community\n      surveys are planned prior to the intervention and at two time-points after the intervention.\n\n      An entomological evaluation will take place concurrently in which mosquito breeding sites\n      are monitored for productivity and mosquitoes will be sampled indoors and outdoors.\n\n   Malaria morbidity is assessed by passive case detection."
+        },
+        "overall_status": "Completed",
+        "start_date": "April 2012",
+        "completion_date": {
+            "@type": "Actual",
+            "#text": "November 2012"
+        },
+        "primary_completion_date": {
+            "@type": "Actual",
+            "#text": "November 2012"
+        },
+        "phase": "N/A",
+        "study_type": "Interventional",
+        "has_expanded_access": "No",
+        "study_design_info": {
+            "allocation": "Randomized",
+            "intervention_model": "Parallel Assignment",
+            "primary_purpose": "Prevention",
+            "masking": "Open Label"
+        },
+        "primary_outcome": {
+            "measure": "Parasite prevalence in the evaluation zone surrounding malaria hotspots",
+            "time_frame": "3 cross-sectional surveys in up to 210 days, the timing being: at enrolment; 45-75 days post enrolment (coinciding with the peak malaria transmission season) and 150-210 days post enrolment (coinciding with the end of the malaria transmission season)",
+            "description": "Parasite prevalence, determined by PCR, in the evaluation zone surrounding hotspots in intervention and control clusters"
+        },
+        "secondary_outcome": [
+            {
+                "measure": "Parasite prevalence inside malaria hotspots",
+                "time_frame": "3 cross-sectional surveys in up to 210 days, the timing being: at enrolment; 45-75 days post enrolment (coinciding with the peak malaria transmission season) and 150-210 days post enrolment (coinciding with the end of the malaria transmission season)",
+                "description": "Parasite prevalence, determined by PCR, inside hotspot of malaria transmission in intervention and control clusters"
+            },
+            {
+                "measure": "Parasite prevalence in the evaluation zone as function of distance to the hotspot boundary",
+                "time_frame": "3 cross-sectional surveys in up to 210 days, the timingbeing: at enrolment; 45-75 days post enrolment (coinciding with the peak malaria transmission season) and 150-210 days post enrolment (coinciding with the end of the malaria transmission season)",
+                "description": "Parasite prevalence, determined by PCR, in relation to distance to the boundary of malaria hotspots in intervention and control clusters"
+            },
+            {
+                "measure": "Anopheles mosquito density",
+                "time_frame": "determined during fortnightly trapping, starting at enrolment and continuing until up to 210 days after enrolment",
+                "description": "Indoor and outdoor anopheles mosquito density inside and outside hotspots of malaria transmission in intervention and control clusters"
+            },
+            {
+                "measure": "Passive case detection",
+                "time_frame": "determined continuously for a period of up to 210 days after enrolment",
+                "description": "Number of malaria cases reporting at health facilities, coming from intervention and control clusters"
+            },
+            {
+                "measure": "Safety and acceptability of interventions",
+                "time_frame": "at a single cross-sectional survey 15-45 days after enrolment",
+                "description": "Side effects of FSAT, LLINs and IRS in targeted households"
+            },
+            {
+                "measure": "Mosquito breeding site productivity",
+                "time_frame": "determined on a weekly basis for a period of up to 210 days after enrolment",
+                "description": "The presence and density of anopheles larvae in mosquito breeding sites in malaria hotspots in intervention and control clusters"
+            }
+        ],
+        "number_of_arms": "2",
+        "enrollment": {
+            "@type": "Actual",
+            "#text": "17506"
+        },
+        "condition": "Malaria",
+        "arm_group": [
+            {
+                "arm_group_label": "Hotspot Targeting",
+                "arm_group_type": "Experimental",
+                "description": "Four hotspot-targeted interventions will be superimposed on ongoing control measures: hotspots will be targeted with a combination of IRS, long-lasting insecticide treated nets (LLINs), larviciding and a focal screening and treatment (FSAT)campaign."
+            },
+            {
+                "arm_group_label": "Control",
+                "arm_group_type": "No Intervention",
+                "description": "Standard of care as determined by the Division of Malaria Control of the Kenyan Ministry of Health"
+            }
+        ],
+        "intervention": [
+            {
+                "intervention_type": "Drug",
+                "intervention_name": "Artemether-lumefantrine combination",
+                "description": "Focal screening and treatment in all households in malaria hotspots prior to the peak transmission season. Screening of a sentinel age group by rapid diagnostic tests; all parasitaemic individuals and household members of parasitaemic individuals will be treated.",
+                "arm_group_label": "Hotspot Targeting"
+            },
+            {
+                "intervention_type": "Biological",
+                "intervention_name": "Bacillus thuringiensis",
+                "description": "Treatment of all waterbodies within hotspots with Bti or Bs on weekly basis",
+                "arm_group_label": "Hotspot Targeting"
+            },
+            {
+                "intervention_type": "Biological",
+                "intervention_name": "Long lasting insecticide treated net (LLINs)",
+                "description": "Distribution of LLINs in all households in malaria hotspots; instruction about correct use.",
+                "arm_group_label": "Hotspot Targeting"
+            },
+            {
+                "intervention_type": "Biological",
+                "intervention_name": "Indoor Residual Spraying (IRS)",
+                "description": "6-monthly IRS with deltamethrin in all households malaria hotspots.",
+                "arm_group_label": "Hotspot Targeting"
+            }
+        ],
+        "eligibility": {
+            "criteria": {
+                "textblock": "Exclusion Criteria:\n\n          -  For LLINs, IRS and larviciding there are no exclusion criteria\n\n          -  Pregnant women and children < 6 months of age are excluded from FSAT"
+            },
+            "gender": "All",
+            "minimum_age": "6 Months",
+            "maximum_age": "N/A",
+            "healthy_volunteers": "Accepts Healthy Volunteers"
+        },
+        "overall_official": [
+            {
+                "last_name": "Teun Bousema, PhD",
+                "role": "Principal Investigator",
+                "affiliation": "Radboud University"
+            },
+            {
+                "last_name": "Jon Cox, PhD",
+                "role": "Principal Investigator",
+                "affiliation": "London School of Hygiene and Tropical Medicine"
+            },
+            {
+                "last_name": "Jennifer Stevenson, PhD",
+                "role": "Principal Investigator",
+                "affiliation": "London School of Hygiene and Tropical Medicine"
+            }
+        ],
+        "location": {
+            "facility": {
+                "address": {
+                    "city": "Rachuonyo District",
+                    "country": "Kenya"
+                }
+            }
+        },
+        "location_countries": {
+            "country": "Kenya"
+        },
+        "reference": {
+            "citation": "Bousema T, Griffin JT, Sauerwein RW, Smith DL, Churcher TS, Takken W, Ghani A, Drakeley C, Gosling R. Hitting hotspots: spatial targeting of malaria for control and elimination. PLoS Med. 2012 Jan;9(1):e1001165. doi: 10.1371/journal.pmed.1001165. Epub 2012 Jan 31.",
+            "PMID": "22303287"
+        },
+        "verification_date": "November 2012",
+        "lastchanged_date": "November 26, 2012",
+        "firstreceived_date": "March 19, 2012",
+        "responsible_party": {
+            "responsible_party_type": "Sponsor"
+        },
+        "keyword": [
+            "malaria",
+            "heterogeneity",
+            "transmission",
+            "elimination"
+        ],
+        "condition_browse": {
+            "mesh_term": "Malaria"
+        },
+        "intervention_browse": {
+            "mesh_term": [
+                "Artemether-lumefantrine combination",
+                "Artemisinins",
+                "Lumefantrine",
+                "Artemether"
+            ]
+        }
+    }
+}

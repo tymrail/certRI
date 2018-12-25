@@ -1,5 +1,7 @@
 Merry Xmas
 
+## 文件说明
+
 models 保存训练好的模型
 
 ir.conf 设置文件目录，ES的index等，注意不需要加引号
@@ -18,7 +20,7 @@ Relevance.py 计算文档评分
 utils.py 工具函数
 
 
-使用方法：
+## 使用方法：
 
 1.修改ir.conf中的文件路径、index名称、doc_type
 
@@ -26,7 +28,7 @@ utils.py 工具函数
 
 python版本：3.6
 
-pip:
+## pip:
 
 configparser
 

@@ -6,10 +6,12 @@ class Conf(object):
         self.conf = configparser.ConfigParser()
 
     def getConfig(self, section, key):
+        # 读取ir.conf中的设定
         self.conf.read('ir.conf')
         return self.conf.get(section, key)
 
     def getMapping(self):
+        # 读取elasticsearch的数据格式
         with open('mapping.json', 'r') as f:
             map_json = json.loads(f.read())
         return map_json
@@ -20,6 +22,7 @@ class Conf(object):
         return searchbody
 
     def getImportant(self):
+        # important.txt中是需要从原始数据中提取出来的字段
         dict_important = {}
         with open('important.txt', 'r') as f:
             for line in f.readlines():

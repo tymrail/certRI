@@ -6,11 +6,6 @@ import nltk
 import xmltodict
 from elasticsearch import Elasticsearch
 from elasticsearch_dsl import Search
-from gensim import corpora
-from gensim.summarization import bm25
-from nltk.corpus import stopwords
-from nltk.stem import WordNetLemmatizer
-from nltk.tokenize import RegexpTokenizer
 
 from Config import Conf
 from utils import NormalAge
@@ -24,15 +19,7 @@ class DataPreprocessing(object):
         self.doc_type = self.conf.getConfig('search', 'doc_type')
         self.es = Elasticsearch()
         self.fields = self.conf.getImportant()
-        self.gensim_fields = self.conf.getGenFields()
         # self.mapping = self.conf.getMapping()
-        self.dict = None
-        self.sentence_list = []
-        self.tokenizer = RegexpTokenizer(r'\w+')
-        self.lem = WordNetLemmatizer()
-        self.stopwords = set(stopwords.words('english'))
-        self.tokens_list = []
-        self.corpus = None
 
         if self.es.indices.exists(index=self.index_name):
             self.es.indices.delete(index=self.index_name)
@@ -47,27 +34,6 @@ class DataPreprocessing(object):
             # json_str = json.dumps(dict_str)
             return dict_str
 
-    def tokenize(self, doc):
-        raw_tokens = self.tokenizer.tokenize(doc.lower())
-        lem_tokens = [self.lem.lemmatize(token) for token in raw_tokens]
-        lem_tokens_without_stopword = filter(lambda i: i not in self.stopwords, lem_tokens)
-        return list(lem_tokens_without_stopword)
-    
-    def getDict(self):
-        for sentence in self.sentence_list:
-            tokens = self.tokenize(sentence)
-            self.tokens_list.append(tokens)
-        self.dict = corpora.Dictionary(self.tokens_list)
-
-    def getModel(self):
-        self.corpus = [self.dict.doc2bow(text) for text in self.tokens_list]
-        # self.bm25Model = bm25.BM25(self.corpus)
-        # self.average_idf = sum(map(lambda k: float(self.bm25Model.idf[k]), self.bm25Model.idf.keys())) / len(self.bm25Model.idf.keys())
-
-    def saveModel(self):
-        self.dict.save("/models/trec.dict")
-        corpora.MmCorpus.serialize("/models/trec.mm", self.corpus)
-
     def oswalk(self):
         count = 0
         for os_set in os.walk(self.xml_path, topdown=True):
@@ -77,7 +43,6 @@ class DataPreprocessing(object):
                     json_data = self.xml2json(filepath)
 
                     cleaned_json_data = {}
-                    gen_sentence = ''
 
                     for field in self.fields:
                         if field in json_data["clinical_study"]:
@@ -86,17 +51,14 @@ class DataPreprocessing(object):
                             else:
                                 cleaned_json_data[field] = json_data["clinical_study"][field]
 
-                            if field in self.gensim_fields:
-                                gen_sentence += str(json_data["clinical_study"][field]) + ' .'
                     if "eligibility" in cleaned_json_data:
                         cleaned_json_data["eligibility"] = NormalAge(cleaned_json_data["eligibility"])
 
                     self.es.index(index=self.index_name, body=cleaned_json_data,
                                     doc_type=self.doc_type)
-                    self.sentence_list.append(gen_sentence)
 
-                    count += 1                        
-                    if count % 5000 == 0:
+                    count += 1
+                    if count % 1000 == 0:
                         print('Already finished:' + str(count))
                 except KeyboardInterrupt:
                     print('Interrupted')
@@ -109,6 +71,8 @@ class DataPreprocessing(object):
                     with open('errorxml.txt', 'a') as f:
                         f.write(str(filepath) + '\n')
                     print('Error in ', str(filename))
-        # self.getDict()
-        # self.getModel()
-        # self.saveModel()
+
+
+if __name__ == "__main__":
+    DP = DataPreprocessing()
+    DP.oswalk()

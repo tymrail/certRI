@@ -10,5 +10,5 @@ primary_outcome:
 secondary_outcome:
 eligibility:
 keyword:
-intervention_browse:
+intervention_browse:mesh_term
 condition:

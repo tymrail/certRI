@@ -1,0 +1,242 @@
+[
+    {
+        "id": "1",
+        "disease": "Liposarcoma",
+        "gene": "CDK4 Amplification",
+        "age": 13870,
+        "gender": "male",
+        "other": "GERD"
+    },
+    {
+        "id": "2",
+        "disease": "Colon cancer",
+        "gene": "KRAS (G13D), BRAF (V600E)",
+        "age": 18980,
+        "gender": "male",
+        "other": "Type II Diabetes, Hypertension"
+    },
+    {
+        "id": "3",
+        "disease": "Meningioma",
+        "gene": "NF2 (K322), AKT1(E17K)",
+        "age": 16425,
+        "gender": "female",
+        "other": "None"
+    },
+    {
+        "id": "4",
+        "disease": "Breast cancer",
+        "gene": "FGFR1 Amplification, PTEN (Q171)",
+        "age": 24455,
+        "gender": "female",
+        "other": "Depression, Hypertension, Heart Disease"
+    },
+    {
+        "id": "5",
+        "disease": "Melanoma",
+        "gene": "BRAF (V600E), CDKN2A Deletion",
+        "age": 16425,
+        "gender": "female",
+        "other": "None"
+    },
+    {
+        "id": "6",
+        "disease": "Melanoma",
+        "gene": "NRAS (Q61K)",
+        "age": 20075,
+        "gender": "male",
+        "other": "Hypertension"
+    },
+    {
+        "id": "7",
+        "disease": "Lung cancer",
+        "gene": "EGFR (L858R)",
+        "age": 18250,
+        "gender": "female",
+        "other": "Lupus"
+    },
+    {
+        "id": "8",
+        "disease": "Lung cancer",
+        "gene": "EML4-ALK Fusion transcript",
+        "age": 18980,
+        "gender": "male",
+        "other": "Hypertension, Osteoarthritis"
+    },
+    {
+        "id": "9",
+        "disease": "Gastrointestinal stromal tumor",
+        "gene": "KIT Exon 9 (A502_Y503dup)",
+        "age": 17885,
+        "gender": "female",
+        "other": "None"
+    },
+    {
+        "id": "10",
+        "disease": "Lung adenocarcinoma",
+        "gene": "KRAS (G12C)",
+        "age": 22265,
+        "gender": "female",
+        "other": "Hypertension, Hypercholesterolemia"
+    },
+    {
+        "id": "11",
+        "disease": "Gastric cancer",
+        "gene": "PIK3CA (E545K)",
+        "age": 19710,
+        "gender": "male",
+        "other": "Depression"
+    },
+    {
+        "id": "12",
+        "disease": "Colon cancer",
+        "gene": "BRAF (V600E)",
+        "age": 12775,
+        "gender": "male",
+        "other": "None"
+    },
+    {
+        "id": "13",
+        "disease": "Cholangiocarcinoma",
+        "gene": "BRCA2",
+        "age": 26280,
+        "gender": "male",
+        "other": "Diabetes"
+    },
+    {
+        "id": "14",
+        "disease": "Cholangiocarcinoma",
+        "gene": "IDH1 (R132H)",
+        "age": 23360,
+        "gender": "male",
+        "other": "Neuropathy"
+    },
+    {
+        "id": "15",
+        "disease": "Cervical cancer",
+        "gene": "STK11",
+        "age": 9490,
+        "gender": "female",
+        "other": "None"
+    },
+    {
+        "id": "16",
+        "disease": "Pancreatic cancer",
+        "gene": "CDKN2A",
+        "age": 19710,
+        "gender": "male",
+        "other": "Diabetes, Hypertension"
+    },
+    {
+        "id": "17",
+        "disease": "Prostate cancer",
+        "gene": "PTEN Inactivating",
+        "age": 29565,
+        "gender": "male",
+        "other": "Hypertension, Depression"
+    },
+    {
+        "id": "18",
+        "disease": "Pancreatic cancer",
+        "gene": "CDK6 Amplification",
+        "age": 17520,
+        "gender": "male",
+        "other": "None"
+    },
+    {
+        "id": "19",
+        "disease": "Colorectal cancer",
+        "gene": "FGFR1 Amplification",
+        "age": 12775,
+        "gender": "female",
+        "other": "None"
+    },
+    {
+        "id": "20",
+        "disease": "Liposarcoma",
+        "gene": "MDM2 Amplification",
+        "age": 9490,
+        "gender": "male",
+        "other": "None"
+    },
+    {
+        "id": "21",
+        "disease": "Lung adenocarcinoma",
+        "gene": "ALK Fusion",
+        "age": 23360,
+        "gender": "female",
+        "other": "Emphysema"
+    },
+    {
+        "id": "22",
+        "disease": "Lung cancer",
+        "gene": "ERBB2 Amplification",
+        "age": 25550,
+        "gender": "male",
+        "other": "Arthritis"
+    },
+    {
+        "id": "23",
+        "disease": "Breast cancer",
+        "gene": "PTEN Loss",
+        "age": 19710,
+        "gender": "female",
+        "other": "Congestive Heart Failure"
+    },
+    {
+        "id": "24",
+        "disease": "Lung cancer",
+        "gene": "NTRK1",
+        "age": 21170,
+        "gender": "female",
+        "other": "Depression, Hypertension, Diabetes"
+    },
+    {
+        "id": "25",
+        "disease": "Lung adenocarcinoma",
+        "gene": "MET Amplification",
+        "age": 17520,
+        "gender": "male",
+        "other": "Emphysema"
+    },
+    {
+        "id": "26",
+        "disease": "Breast cancer",
+        "gene": "NRAS Amplification",
+        "age": 12775,
+        "gender": "female",
+        "other": "None"
+    },
+    {
+        "id": "27",
+        "disease": "Pancreatic adenocarcinoma",
+        "gene": "KRAS, TP53",
+        "age": 17885,
+        "gender": "female",
+        "other": "None"
+    },
+    {
+        "id": "28",
+        "disease": "Pancreatic ductal adenocarcinoma",
+        "gene": "ERBB3",
+        "age": 26645,
+        "gender": "female",
+        "other": "Whipple, FNA"
+    },
+    {
+        "id": "29",
+        "disease": "Ampullary carcinoma",
+        "gene": "KRAS",
+        "age": 22265,
+        "gender": "male",
+        "other": "None"
+    },
+    {
+        "id": "30",
+        "disease": "Pancreatic adenocarcinoma",
+        "gene": "RB1, TP53, KRAS",
+        "age": 20805,
+        "gender": "female",
+        "other": "None"
+    }
+]

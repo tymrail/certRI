@@ -100,7 +100,7 @@ class Query(object):
         # print(query_result)
         score_max = query_result[0]['_score']
         rank = 1
-        with open("result/output_4.txt", "a") as f:
+        with open("result/output_5.txt", "a") as f:
             try:
                 for qr in query_result:
                     # 过滤年龄不符合的情况

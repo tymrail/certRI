@@ -13,6 +13,9 @@ class Query(object):
         self.index_name = self.conf.getConfig("search", "index_name")
         self.doc_type = self.conf.getConfig("search", "doc_type")
         self.es = Elasticsearch(timeout=30, max_retries=10, retry_on_timeout=True)
+        # 设定es的超时时限为30秒，默认为10秒
+        # 最大重试次数为10次
+        # 防止因数据量太大导致的超时
         self.fields = self.conf.getImportant()
         self.extracted = []
 
@@ -24,6 +27,7 @@ class Query(object):
             return dict_str
 
     def extract_query(self):
+        # 处理查询字段
         query_xml_data = self.xml2json(self.query_xml_path)["topics"]["topic"]
         for q in query_xml_data:
             new_query = {
@@ -41,6 +45,7 @@ class Query(object):
     def query(self, single_query):
         gender_lst = ["male", "female"]
         must_not_gender = gender_lst[abs(gender_lst.index(single_query["gender"]) - 1)]
+        # 性别分为male，female和All三种，得到不用的一种
         # query_body = {
         #     "query": {
         #         "bool": {
@@ -85,10 +90,12 @@ class Query(object):
             },
             "size": 1500,
         }
+        # 这里的querybody需要再认真设计下，不同的查询方式对最终结果的MAP和P@10影响很大
 
         query_result = self.es.search(
             index=self.index_name, doc_type=self.doc_type, body=query_body
         )["hits"]["hits"]
+        # 获得查询结果
 
         # print(query_result)
         score_max = query_result[0]['_score']
@@ -96,12 +103,15 @@ class Query(object):
         with open("result/output_4.txt", "a") as f:
             try:
                 for qr in query_result:
+                    # 过滤年龄不符合的情况
                     if "eligibility" in qr["_source"]:
                         qr_eli = qr["_source"]["eligibility"]
                         if float(qr_eli["minimum_age"]) > single_query[
                             "age"
                         ] or single_query["age"] > float(qr_eli["maximum_age"]):
                             continue
+                            
+                    # 按照要求格式写文件
                     f.write(
                         "{}\tQ0\t{}\t{}\t{}\tcertRI\n".format(
                             single_query["id"],

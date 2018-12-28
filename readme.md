@@ -24,7 +24,9 @@ utils.py 工具函数
 
 1.修改ir.conf中的文件路径、index名称、doc_type
 
-2.python main.py
+2.python DataProcessing.py ：将数据存进ElasticSearch
+
+3.python Query.py : 查询
 
 python版本：3.6
 

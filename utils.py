@@ -5,9 +5,9 @@ import re
 import sys
 
 def NormalAge(eli, age_list=["minimum_age","maximum_age"]):
+    # 处理年龄
     eli["minimum_age"] = NormAge(eli["minimum_age"], 0)
-    eli["maximum_age"] = NormAge(eli["maximum_age"], 200*365)
-                
+    eli["maximum_age"] = NormAge(eli["maximum_age"], 200*365)          
     return eli
 
 def NormAge(age_str, default_age):
@@ -25,10 +25,12 @@ def NormAge(age_str, default_age):
         'Minute': 1 / 24 / 60,
         'Minutes': 1 / 24 / 60,
     }
+    # 数据中的年龄可能的情况
 
     pattern = "([1-9]*[0-9]+) (Year|Years|Month|Months|Week|Weeks|Day|Days|Hour|Hours|Minute|Minutes)"
     
     norm_age = default_age
+    # 正则化匹配不同情况
     if age_str != 'N/A' and age_str:
         m = re.match(pattern, age_str)
         norm_age = str(int(m.group(1)) * units[m.group(2)])

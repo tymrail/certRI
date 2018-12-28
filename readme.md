@@ -15,7 +15,7 @@ Config.py 读取项目设置
 
 DataProcessing.py 数据预处理
 
-Relevance.py 计算文档评分
+Query.py  查询 
 
 utils.py 工具函数
 

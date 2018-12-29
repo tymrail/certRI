@@ -1,0 +1,26 @@
+{
+    "query": {
+        "bool": {
+            "should": [
+                {"match": {
+                    "brief_title": {
+                        "query": "",
+                        "boost": 3
+                    }
+                }},
+                {"match": {
+                    "official_title": {
+                        "query": "",
+                        "boost": 2
+                    }
+                }},
+                {"match": {
+                    "detailed_description": {
+                        "query": "",
+                        "boost": 1
+                    }
+                }}
+            ]
+        }
+    }
+}

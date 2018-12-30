@@ -3,11 +3,7 @@ brief_title:
 official_title:
 brief_summary:textblock
 detailed_description:textblock
-start_date:#text
-completion_date:#text
 intervention:
-primary_outcome:
-secondary_outcome:
 eligibility:
 keyword:
 intervention_browse:mesh_term

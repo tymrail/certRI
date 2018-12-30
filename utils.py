@@ -31,6 +31,7 @@ def NormAge(age_str, default_age):
     
     norm_age = default_age
     # 正则化匹配不同情况
+    # print(age_str)
     if age_str != 'N/A' and age_str:
         m = re.match(pattern, age_str)
         norm_age = str(int(m.group(1)) * units[m.group(2)])

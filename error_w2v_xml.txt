@@ -1,0 +1,11 @@
+/home/serlytus/_DATA/clinicaltrials_xml/015/01509/NCT01509742.xml
+/home/serlytus/_DATA/clinicaltrials_xml/002/00275/NCT00275444.xml
+/home/serlytus/_DATA/clinicaltrials_xml/002/00219/NCT00219414.xml
+/home/serlytus/_DATA/clinicaltrials_xml/002/00239/NCT00239447.xml
+/home/serlytus/_DATA/clinicaltrials_xml/002/00274/NCT00274508.xml
+/home/serlytus/_DATA/clinicaltrials_xml/002/00274/NCT00274534.xml
+/home/serlytus/_DATA/clinicaltrials_xml/002/00274/NCT00274560.xml
+/home/serlytus/_DATA/clinicaltrials_xml/002/00274/NCT00274547.xml
+/home/serlytus/_DATA/clinicaltrials_xml/002/00274/NCT00274599.xml
+/home/serlytus/_DATA/clinicaltrials_xml/004/00414/NCT00414206.xml
+/home/serlytus/_DATA/clinicaltrials_xml/004/00442/NCT00442754.xml

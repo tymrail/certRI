@@ -1,5 +1,7 @@
 import json
 import os
+import pickle
+import pprint
 import sys
 
 import xmltodict
@@ -41,7 +43,7 @@ class Test(object):
             index=self.index_name,
             doc_type=self.doc_type,
             body={
-                "query": {"match": {"intervention_browse": "lung adenocarcinoma"}},
+                "query": {"match": {"id_info": "NCT02065063"}},
                 "size": 10000,
             },
         )
@@ -50,11 +52,18 @@ class Test(object):
         # body={"query": {"match": {"id_info": "NCT00001431"}}},
 
         for r in res["hits"]["hits"]:
-            # print(r["_source"]["id_info"])
+            print(r["_source"])
             with open("carcinoma", 'a') as f:
                 f.write("{}\n".format(r["_source"]["id_info"]))
+
+    def getPickles(self, pickle_path):
+        with open(pickle_path, 'rb') as pf:
+            data = pickle.load(pf)
+            # pprint.pprint(data)
+            return data
 
 if __name__ == "__main__":
     testObject = Test()
     # testObject.getCount()
     testObject.searchSingle()
+    # d = testObject.getPickles("pickles/mesh_dict.pickle")

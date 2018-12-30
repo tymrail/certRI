@@ -46,15 +46,33 @@ class Query(object):
         gender_lst = ["male", "female"]
         must_not_gender = gender_lst[abs(gender_lst.index(single_query["gender"]) - 1)]
         # 性别分为male，female和All三种，得到不用的一种
+        query_body = {
+            "query": {
+                "bool": {
+                    "should": [
+                        {"match": {"brief_title": {"query": single_query["disease"], "boost": 4}}},
+                        {"match": {"official_title": {"query": single_query["disease"], "boost": 2}}},
+                        {"match": {"brief_summary": {"query": single_query["disease"], "boost": 1}}},
+                        {"match": {"detailed_description": {"query": single_query["disease"], "boost": 1}}},
+                        {"match": {"eligibility.criteria.textblock": {"query": single_query["disease"], "boost": 1}}},
+                        {"match": {"keyword": {"query": single_query["disease"], "boost": 1}}},
+                        {"match": {"condition": {"query": single_query["disease"], "boost": 1}}},
+                    ],
+                    "must_not": [{"term": {"gender": must_not_gender}}],
+                },
+            },
+            "size": 1500,
+        }
         # query_body = {
         #     "query": {
         #         "bool": {
-        #             "must": [
+        #             "should": [
         #                 {
         #                     "multi_match": {
         #                         "query": single_query["disease"],
         #                         "fields": [
         #                             "brief_title",
+        #                             "brief_summary",
         #                             "detailed_description",
         #                             "official_title",
         #                             "intervention",
@@ -64,32 +82,13 @@ class Query(object):
         #                             "criteria",
         #                         ],
         #                     }
-        #                 },
+        #                 }
         #             ],
         #             "must_not": [{"term": {"gender": must_not_gender}}],
         #         }
         #     },
-        #     "size": 1500,
+        #     "size": 30,
         # }
-        query_body = {
-            "query": {
-                "bool": {
-                    "should": [
-                        {"match": {"brief_title": single_query["disease"]}},
-                        {"match": {"brief_summary": single_query["disease"]}},
-                        {"match": {"detailed_description": single_query["disease"]}},
-                        {"match": {"official_title": single_query["disease"]}},
-                        {"match": {"intervention": single_query["disease"]}},
-                        {"match": {"intervention_browse": single_query["disease"]}},
-                        {"match": {"keyword": single_query["disease"]}},
-                        {"match": {"condition": single_query["disease"]}},
-                        {"match": {"criteria": single_query["disease"]}},
-                    ],
-                    "must_not": [{"term": {"gender": must_not_gender}}],
-                }
-            },
-            "size": 1500,
-        }
         # 这里的querybody需要再认真设计下，不同的查询方式对最终结果的MAP和P@10影响很大
 
         query_result = self.es.search(
@@ -98,9 +97,9 @@ class Query(object):
         # 获得查询结果
 
         # print(query_result)
-        score_max = query_result[0]['_score']
+        # score_max = query_result[0]["_score"]
         rank = 1
-        with open("result/output_5.txt", "a") as f:
+        with open("trec_eval/eval/4211111.txt", "a") as f:
             try:
                 for qr in query_result:
                     # 过滤年龄不符合的情况
@@ -110,14 +109,14 @@ class Query(object):
                             "age"
                         ] or single_query["age"] > float(qr_eli["maximum_age"]):
                             continue
-                            
+
                     # 按照要求格式写文件
                     f.write(
-                        "{}\tQ0\t{}\t{}\t{}\tcertRI\n".format(
+                        "{} Q0 {} {} {} certRI\n".format(
                             single_query["id"],
                             qr["_source"]["id_info"],
                             rank,
-                            round(qr["_score"]/score_max, 4),
+                            round(qr["_score"], 4),
                         )
                     )
                     rank += 1

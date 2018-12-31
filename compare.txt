@@ -1,0 +1,255 @@
+DEs:
+P5             	all	0.4069
+P10            	all	0.3276
+P15            	all	0.2736
+
+DE_0_BM25_10:
+P5             	all	0.2897
+P10            	all	0.2690
+P15            	all	0.2368
+
+DE_1_BM25_9:
+P5             	all	0.2828
+P10            	all	0.2793
+P15            	all	0.2529
+
+DE_2_BM25_8:
+P5             	all	0.3172
+P10            	all	0.3000
+P15            	all	0.2529
+
+DE_3_BM25_7:
+P5             	all	0.3241
+P10            	all	0.3103
+P15            	all	0.2529
+
+DE_4_BM25_6:
+P5             	all	0.3379
+P10            	all	0.3138
+P15            	all	0.2529
+
+DE_5_BM25_5:
+P5             	all	0.3586
+P10            	all	0.3034
+P15            	all	0.2598
+
+DE_6_BM25_4:
+P5             	all	0.3655
+P10            	all	0.3069
+P15            	all	0.2644
+
+DE_7_BM25_3:
+P5             	all	0.3862
+P10            	all	0.3241
+P15            	all	0.2690
+
+DE_8_BM25_2:
+P5             	all	0.3931
+P10            	all	0.3241
+P15            	all	0.2828
+
+DE_9_BM25_1:
+P5             	all	0.3931
+P10            	all	0.3138
+P15            	all	0.2851
+
+DE_0_BM25_10s:
+P5             	all	0.3379
+P10            	all	0.2862
+P15            	all	0.2414
+
+DE_1_BM25_9s:
+P5             	all	0.3517
+P10            	all	0.2897
+P15            	all	0.2529
+
+DE_2_BM25_8s:
+P5             	all	0.3448
+P10            	all	0.2966
+P15            	all	0.2529
+
+DE_3_BM25_7s:
+P5             	all	0.3517
+P10            	all	0.3034
+P15            	all	0.2552
+
+DE_4_BM25_6s:
+P5             	all	0.3517
+P10            	all	0.3069
+P15            	all	0.2552
+
+DE_5_BM25_5s:
+P5             	all	0.3724
+P10            	all	0.3034
+P15            	all	0.2598
+
+DE_6_BM25_4s:
+P5             	all	0.3655
+P10            	all	0.3103
+P15            	all	0.2690
+
+DE_7_BM25_3s:
+P5             	all	0.3793
+P10            	all	0.3138
+P15            	all	0.2713
+
+DE_8_BM25_2s:
+P5             	all	0.3793
+P10            	all	0.3172
+P15            	all	0.2782
+
+DE_9_BM25_1s:
+P5             	all	0.3931
+P10            	all	0.3207
+P15            	all	0.2828
+
+DE_0_BM25_10ss:
+P5             	all	0.2621
+P10            	all	0.2759
+P15            	all	0.2368
+
+DE_1_BM25_9ss:
+P5             	all	0.2759
+P10            	all	0.3103
+P15            	all	0.2552
+
+DE_2_BM25_8ss:
+P5             	all	0.2966
+P10            	all	0.3138
+P15            	all	0.2575
+
+DE_3_BM25_7ss:
+P5             	all	0.3241
+P10            	all	0.3069
+P15            	all	0.2598
+
+DE_4_BM25_6ss:
+P5             	all	0.3310
+P10            	all	0.3138
+P15            	all	0.2621
+
+DE_5_BM25_5ss:
+P5             	all	0.3379
+P10            	all	0.3103
+P15            	all	0.2598
+
+DE_6_BM25_4ss:
+P5             	all	0.3655
+P10            	all	0.3138
+P15            	all	0.2621
+
+DE_7_BM25_3ss:
+P5             	all	0.3793
+P10            	all	0.3241
+P15            	all	0.2713
+
+DE_8_BM25_2ss:
+P5             	all	0.4069
+P10            	all	0.3276
+P15            	all	0.2805
+
+DE_9_BM25_1ss:
+P5             	all	0.4000
+P10            	all	0.3138
+P15            	all	0.2805
+
+DE_0_BM25_10sss:
+P5             	all	0.2552
+P10            	all	0.2862
+P15            	all	0.2506
+
+DE_1_BM25_9sss:
+P5             	all	0.2897
+P10            	all	0.3103
+P15            	all	0.2575
+
+DE_2_BM25_8sss:
+P5             	all	0.3034
+P10            	all	0.3138
+P15            	all	0.2598
+
+DE_3_BM25_7sss:
+P5             	all	0.3103
+P10            	all	0.3069
+P15            	all	0.2621
+
+DE_4_BM25_6sss:
+P5             	all	0.3172
+P10            	all	0.3103
+P15            	all	0.2644
+
+DE_5_BM25_5sss:
+P5             	all	0.3379
+P10            	all	0.3034
+P15            	all	0.2621
+
+DE_6_BM25_4sss:
+P5             	all	0.3448
+P10            	all	0.3000
+P15            	all	0.2621
+
+DE_7_BM25_3sss:
+P5             	all	0.3724
+P10            	all	0.3138
+P15            	all	0.2690
+
+DE_8_BM25_2sss:
+P5             	all	0.3931
+P10            	all	0.3172
+P15            	all	0.2782
+
+DE_9_BM25_1sss:
+P5             	all	0.4069
+P10            	all	0.3172
+P15            	all	0.2828
+
+
+DE_cut_1:
+P5             	all	0.3000
+P10            	all	0.2500
+P15            	all	0.2222
+
+DE_cut_2:
+P5             	all	0.4000
+P10            	all	0.3000
+P15            	all	0.2556
+
+DE_cut_3:
+P5             	all	0.4667
+P10            	all	0.3833
+P15            	all	0.2778
+
+DE_cut_4:
+P5             	all	0.5000
+P10            	all	0.4333
+P15            	all	0.3778
+
+DE_cut_5:
+P5             	all	0.3600
+P10            	all	0.2600
+P15            	all	0.2267
+
+DE_8_BM25_2_cut_1:
+P5             	all	0.3000
+P10            	all	0.2333
+P15            	all	0.2222
+
+DE_8_BM25_2_cut_2:
+P5             	all	0.3667
+P10            	all	0.3000
+P15            	all	0.2556
+
+DE_8_BM25_2_cut_3:
+P5             	all	0.4667
+P10            	all	0.3667
+P15            	all	0.3000
+
+DE_8_BM25_2_cut_4:
+P5             	all	0.5000
+P10            	all	0.4333
+P15            	all	0.3778
+
+DE_8_BM25_2_cut_5:
+P5             	all	0.4000
+P10            	all	0.3000
+P15            	all	0.2400
